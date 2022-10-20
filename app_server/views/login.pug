@@ -2,15 +2,35 @@ extends layout
 
 block content
   .container
-      .nav.nav-pills.nav-fill 
-        li.nav-item 
-          a(href="workouts").nav-link Workouts
-        li.nav-item
-        li.nav-item
-        li.nav-item 
-          a(href="login").nav-link.active Login 
-        
-        li.nav-item 
-          a(href="register").nav.link Register
+    .nav.nav-pills.nav-fill 
+          li.nav-item 
+            a(href="workouts").nav-link Workouts
+          li.nav-item
+          li.nav-item
+          li.nav-item 
+            a(href="login").nav-link.active Login         
+          li.nav-item 
+            a(href="/").nav-link Register
+
+  .pageLayout
+    .card
+        .form-group.col-lg-12           
+         .col-lg-12                        
+            table 
+                tr 
+                  h2 LOGIN
+                tr 
+                 td Email
+                 td
+                  input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Email')
+                tr 
+                 td Password
+                 td
+                  input#exampleInputEmail1.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Password')
+                                          
+            br
+            button.btn.btn-primary(type='submit') Login
+            br
+        a(href="/" style="text-align:center").link Don't have an account? Register here
 
     
